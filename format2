@@ -1,3 +1,0 @@
-x=2
-print(x)
-print("{:4d}{:4d}{:4d}".format(x,x,x))
