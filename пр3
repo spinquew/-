@@ -18,7 +18,7 @@ elif k < 2:
   r = k**2
 else:
   r = 1
-print(R)
+print(r)
 
 #3
 a = int(input())
@@ -40,7 +40,7 @@ elif k > v:
     z = k**2 - v**2
 else:
     z = k**2 - k
-print(Z)
+print(z)
 
 #5
 f = int(input())
@@ -160,4 +160,4 @@ elif a > b and a > 3:
     c =  b**2 + 2
 else:
     c = b
-print(C)
+print(с)
