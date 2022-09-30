@@ -1,0 +1,96 @@
+#1
+x=input('Введите текст: \n')
+i=0
+for a in x.split(" "):
+    if a.strip()[0]=='е':
+        i+=1
+print(i)
+
+#2
+x=input("Введите ':'\n")
+i=x.replace(":","%")
+print(i,"\n","кол-во замен =",i.count('%') )
+
+#3
+a = input('Введите текст \n')
+i = a.replace('.', '')
+print("кол-во удаленных = ", len(a) - len(i))
+print("итог = ",i)
+
+#4
+print("итог = ", *(lambda a: (a.replace("а", "o"),"\n кол во замен =", a.count("а"), "\n кол-во символов = ", len(a),))(input("введите текст = ")))
+
+#5
+s=input('Введите текст = ')
+print("итог = ", s.lower())
+
+#6
+i=input("Введите: \n")
+x=i.replace("а","")
+y=len(i)-len(x)
+print("итог = ", x,"\n кол-во удалений = ", y)
+
+#7
+s = input('введите текст = ')
+s1 = s[:int((len(s)+1)/2)]
+s2 = s.replace(s1,'')
+g = ""
+for i in s1:
+    if i == "п":
+        g += "*"
+    else:
+        g += i
+print(g+s2)
+
+#8
+s = input('введите текст = ')
+print(len(s.split()))
+
+#9 
+i=input('Введите текст = \n')
+a=input("введите искомое слово = ")
+k = i.count(a)
+print("итог = ", k)
+
+#10
+i=input("Введите предложение на английском языке\n")
+print("итог = ", i.title())
+
+#11
+import re
+s = input()
+n = re.findall('[Нн]+',s)
+n1 = map(len,n)
+print("самая длинная последовательность = ",max(n1))
+s1 = s.replace('!','.')
+print("итог = ", s1)
+
+#12
+x=input('Введите текст: \n')
+for a in x.split(" "):
+    if a.strip()[-1]=='я':
+        print(a)
+
+#13
+
+s=str(input("Введите предложение со скобками\n"))
+a=list(s)
+for i in range(len(a)):
+ if a[i]=='(':
+ x=i+1;
+ elif a[i]==')':
+ y=i;
+s = s[x:y]
+print(s)
+
+#14
+x=input('Введите предложение: \n')
+for a in x.split(" "):
+    if a.strip()[0]=='а':
+        print(a)
+    if a.strip()[-1]=='я':
+        print(a)
+
+#15
+i=input('введите текст = ')
+print(i.count('т'))
